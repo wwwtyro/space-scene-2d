@@ -34,11 +34,17 @@ import { Space2D } from "space-scene-2d";
 
 const space2d = new Space2D();
 
-const canvas = space2d.render(1024, 1024, {
+const canvas = space2d.render(512, 512, {
+  nebulaAlbedoLow: [0.1, 0.25, 0.5],
+  nebulaAlbedoHigh: [0.5, 0.25, 0.1],
+  nebulaFalloff: 512,
+  nebulaAbsorption: 1.0,
+  nebulaDensity: 0.1,
+  nebulaAlbedoScale: 5,
   stars: [
     {
-      position: [256, 256, 250],
-      color: [0.75, 0.75, 1.0],
+      position: [256, 256, 350],
+      color: [0.1375, 0.1375, 0.25],
       falloff: 256,
       diffractionSpikeFalloff: 1024,
       diffractionSpikeScale: 8,
@@ -48,6 +54,10 @@ const canvas = space2d.render(1024, 1024, {
 
 document.body.appendChild(canvas);
 ```
+
+<p align="center">
+  <img src="media/example.png">
+</p>
 
 ## API
 
