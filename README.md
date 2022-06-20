@@ -1,6 +1,6 @@
 # Space Scene 2D
 
-Procedural generator for 2D space scenes.
+Procedural generator for 2D space scenes. Try it out live [here](https://wwwtyro.github.io/space-scene-2d).
 
 <p align="center">
   <img src="media/4ufckgozkjlmvtoxuqqvuu.png">
