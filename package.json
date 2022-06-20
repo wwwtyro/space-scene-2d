@@ -1,0 +1,52 @@
+{
+  "name": "space-scene-2d",
+  "version": "1.0.0",
+  "description": "Procedural generator for 2D space scenes.",
+  "keywords": [
+    "2D",
+    "space",
+    "nebula",
+    "star",
+    "procedural"
+  ],
+  "author": {
+    "name": "Rye Terrell",
+    "email": "ryeterrell@ryeterrell.net",
+    "url": "https://wwwtyro.net"
+  },
+  "homepage": "https://github.com/wwwtyro/space-scene-2d",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwwtyro/space-scene-2d.git"
+  },
+  "license": "Unlicense",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.es.js",
+  "types": "./lib/index",
+  "exports": {
+    ".": {
+      "import": "./lib/index.es.js",
+      "require": "./lib/index.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite --config vite.utility-config.js --host 0.0.0.0",
+    "build-utility": "tsc && vite build --config vite.utility-config.js",
+    "build-lib": "tsc && vite build --config vite.lib-config.js",
+    "build": "npm run clean && npm run build-lib && npm run build-utility",
+    "clean": "rm -rf lib docs"
+  },
+  "devDependencies": {
+    "@tweakpane/core": "^1.1.0",
+    "tweakpane": "^3.1.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "alea": "^1.0.1",
+    "regl": "^2.1.0"
+  }
+}
