@@ -30,7 +30,7 @@ npm i space-scene-2d
 ## Example
 
 ```ts
-import { Space2D } from "../src/index";
+import { Space2D } from "space-scene-2d";
 
 const space2d = new Space2D();
 

@@ -8,13 +8,14 @@
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "esModuleInterop": true,
-    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "./lib",
+    "declarationMap": true
   },
   "include": ["src", "vite.utility-config.js"]
 }
